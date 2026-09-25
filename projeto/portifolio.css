@@ -13,7 +13,7 @@
 html{
     scroll-behavior: smooth;
 }
-boty{
+body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #0f0f14;
     color: #F5F5F5;
@@ -69,7 +69,7 @@ nav a{
 
     color: #b8b8c7;
     font-size: 15px;
-    transition: 0.3;
+    transition: 0.3s;
 }
 nav a:hover{
 
@@ -243,7 +243,7 @@ gap: 15px;
 background-color: #1d1d27;
 padding: 20px;
 border-radius: 8px;
-border-left: 4x solid #7c5cff;
+border-left: 4px solid #7c5cff;
 
 }
 .habilidade h3{
@@ -270,11 +270,11 @@ background-color: #0f0f14;
 }
 .card{
     flex: 1;
-    background-color: #19191922;
+    background-color: #191922;
     padding: 30px;
     border: 1px solid #292936;
     border-radius: 12px;
-    transition: 0.3;
+    transition: 0.3s;
 }
 .card:hover{
     transform: translateY(-8px);
@@ -308,7 +308,7 @@ background-color: #0f0f14;
 }
 .tecnologias span{
 background-color: #262633;
-color: #bdbd19;
+color: #bdbdc9;
 padding: 5px 10px;
 border-radius: 5px;
 font-size: 12px;
@@ -357,4 +357,4 @@ footer{
 }
 
 /*RESPONSIVIDADE*/
-@media(max-widh: 800px)
+@media(max-width: 800px){}
