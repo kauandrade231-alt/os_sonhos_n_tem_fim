@@ -182,7 +182,7 @@ transform: translateY(-3px);
 /*SEÇÃO*/
 
 section{
-    padding: 100px 10% 100px 10%;
+    padding: 100px 10% ;
 }
 
 .titulo-secao{
@@ -357,4 +357,42 @@ footer{
 }
 
 /*RESPONSIVIDADE*/
-@media(max-width: 800px){}
+@media(max-width: 800px){
+
+    /* MENU / HEADER*/
+
+    header{
+        height: auto;
+        padding: 20px 5%;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /*LINKS DO MENU*/
+nav{
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/*INICIO*/
+.inicio{
+
+    min-height: auto;
+    padding: 70px 5%;
+
+}
+.apresentacao{
+    font-size: 24px;
+}
+.inicio h1{
+    font-size: 40px;
+}
+.inicio h2{
+    font-size: 20px;
+}
+.descricao{
+    font-size: 16px;
+}
+/* TODAS AS SEÇÕES*/
+
+}
