@@ -1,0 +1,95 @@
+
+
+
+
+
+CSS Pseudo-classes
+A CSS pseudo-class is a keyword that can be added to a selector, to define a style for a special state of an element.
+
+Some common use for pseudo-classes:
+
+Style an element when a user moves the mouse over it
+Style visited and unvisited links differently
+Style an element when it gets focus
+Style valid/invalid/required/optional form elements
+Style an element that is the first child of its parent
+Syntax
+Pseudo-classes are always denoted by a single colon (:) followed by the pseudo-class name:
+
+selector:pseudo-class-name {
+  CSS properties
+}
+The table below lists all the pseudo-class keywords in CSS:
+
+Pseudo-class	Examples	Example description
+:active	a:active	Selects the active link
+:any-link	a:anylink
+area:anylink	Selects any <a> or <area> element with an href attribute
+:auto-fill	input:autofill	Selects any <input> element with its value autofilled by the browser
+:checked	input:checked
+option:checked	Matches any <input> or <option> element that is checked
+:default	input:default
+button:default
+option:default	Selects form elements that are default in a group of related elements
+:defined	:defined	Selects any element that has been defined (standard or custom elements)
+:dir()	:dir(ltr)
+:dir(rtl)	Selects any element with the specified text direction
+:disabled	:disabled
+input:disabled
+option:disabled	Selects any element that is disabled. Most used for form elements
+:empty	div:empty	Selects any element that has no children (including text nodes)
+:enabled	:enabled
+input:enabled	Selects any element that is enabled. Most used for form elements
+:first	@page :first	Represents the first page of a printed document (used with the @page rule)
+:first-child	p:first-child
+li:first-child	Selects the element that is the first child of its parent (among a group of sibling elements)
+:first-of-type	p:first-of-type
+li:first-of-type	Selects the first element of its type among a group of sibling elements
+:focus	input:focus
+select:focus	Selects the element that gets focus. Most used for form elements
+:focus-visible	button:focus-visible	Selects the element that gets focus (used to apply focus styles only when the keyboard is used to focus something, not the mouse)
+:focus-within	form:focus-within
+label:focus-within	Matches an element if the element or any of its descendants gets focus
+:fullscreen	:fullscreen	Selects any element that is currently in full-screen mode
+:has()	h2:has(+p)	Selects h2 elements that are immediately followed by a p element, and applies the style to h2
+:hover	a:hover
+p:hover	Selects element on mouse over
+:in-range	input:in-range	Select any <input> element with a value within the specified range limit
+:indeterminate	input:indeterminate	Selects any form element that is in an indeterminate state
+:invalid	input:invalid
+fieldset:invalid	Selects invalid form elements
+:is()	:is(ul, ol)	Selects all <ul> and <ol>elements
+:lang()	p:lang(it)	Selects any <p> element with a lang attribute equal to "it" (Italian)
+:last-child	li:last-child	Selects any <li> element that is the last child of its parent
+:last-of-type	p:last-of-type	Selects any <p> element that is the last <p> element of its parent
+:left	@page :left	Represents all left-hand pages of a printed document (used with the @page rule)
+:link	a:link	Selects any unvisited link
+:modal	:modal	Selects the element that is in a modal state
+:not()	:not(p)	Selects any element that is not a <p> element
+:nth-child()	p:nth-child(2)	Selects any <p> element that is the second child of its parent
+:nth-last-child()	p:nth-last-child(2)	Selects any <p> element that is the second child of its parent, counting from the end
+:nth-last-of-type()	p:nth-last-of-type(2)	Selects any <p> element that is the second <p> element of its parent, counting from the end
+:nth-of-type()	p:nth-of-type(2)	Selects any <p> element that is the second <p> element of its parent
+:only-child	p:only-child	Selects any <p> element that is the only child of its parent
+:only-of-type	p:only-of-type	Selects any <p> element that is the only <p> element of its parent
+:optional	input:optional
+select:optional
+textarea:optional	Selects any <input>, <select>, or <textarea> elements without a "required" attribute
+:out-of-range	input:out-of-range	Selects any <input> element with a value outside the specified range limit
+:placeholder-shown	input:placeholder-shown
+textarea:placeholder-shown	Selects any <input> or <textarea> element that is currently displaying placeholder text
+:popover-open	:popover-open	Selects any element that is in a showing popover state
+:read-only	input:read-only	Selects input elements with the "readonly" attribute specified
+:read-write	input:read-write	Selects editable input elements
+:required	input:required	Selects input elements with the "required" attribute specified
+:right	@page :right	Represents all right-hand pages of a printed document (used with the @page rule)
+:root	:root	Selects the document's root element
+:scope	:scope	Selects elements that are a reference point, or scope, for selectors to match against
+:state()	:state()	Selects custom elements that have the specified custom state
+:target	:target	Selects the current active target element
+:user-invalid	:user-invalid	Selects any form element with an invalid value (after the user have interacted with it)
+:user-valid	:user-valid	Selects any form element with a valid value (after the user have interacted with it)
+:valid	input:valid	Selects all input elements with a valid value
+:visited	a:visited
+area:visited	Selects all visited links
+:where()	:where(ol, ul)	Selects all <ul> and <ol>elements
