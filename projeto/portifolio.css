@@ -395,4 +395,35 @@ nav{
 }
 /* TODAS AS SEÇÕES*/
 
+.section{
+    padding: 70px 5%;
+}
+/*SOBRE*/
+
+.sobre-conteudo{
+    flex-direction: column;
+    align-items: stretch;
+}
+/*PROJETOS*/
+
+.projetos{
+    flex-direction: column;
+}
+/*BOTOES*/
+.botoes{
+    flex-direction: column;
+    align-items: flex-start;
+}
+/*contato*/
+
+.contato-links{
+    flex-wrap: wrap;
+}
+/*RODAPE*/
+
+.footer{
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
 }
