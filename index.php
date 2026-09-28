@@ -5,7 +5,7 @@
     $matricula_ativa = true;
     $resultado = "";
 
-    if($idade>18){
+    if($idade>=18){
         $resultado = "é de maior";
 
     }else{
@@ -31,7 +31,7 @@
 <!--MENU-->
     <header>
         <div class="logo">
-            <h2>  <?php $resultado ?> </h2>
+            <h2>  <?=   $resultado ?> </h2>
             <!--<h2>Kauan <span>de Andrade</span></h2> -->
 
         </div>
