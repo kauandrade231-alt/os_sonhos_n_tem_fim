@@ -1,11 +1,23 @@
+<?php
+    $nome = "Kauan";
+    $idade = 17;
+    $altura = 1.80;
+    $matricula_ativa = true;
+    $resultado = "";
+
+    if($idade>18){
+        $resultado = "é de maior";
+
+    }else{
+        $resultado ="é de menor";
+    }
 
 
 
 
 
 
-
-
+?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -16,11 +28,11 @@
     <link rel="stylesheet" href="portifolio.css">
 </head>
 <body>
-<!--da like-->
+<!--MENU-->
     <header>
         <div class="logo">
-
-            <h2>Kauan <span>de Andrade</span></h2>
+            <h2>  <?php $resultado ?> </h2>
+            <!--<h2>Kauan <span>de Andrade</span></h2> -->
 
         </div>
 
