@@ -19,7 +19,7 @@
 
 ?>
 
-<p> <?= $resultado ?> </p>
+
 <!DOCTYPE html>
 <body>
     <header>
@@ -43,7 +43,7 @@
     <input type="number" class="idade"_id="idade" name="idade">
     <button type="submit"> Cadastrar</button>
         </form>
-   
+         <p> <?= $resultado ?> </p>
     
     
          </form>
