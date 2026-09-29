@@ -1,16 +1,15 @@
 <?php
 
-    $nome = $_POST["nome"];
-    $idade=$_POST["idade"] ;
-  
-    $resultado = "";
+$nome = $_POST["nome"];
+$idade = $_POST["idade"];
 
-    if($idade>=18){
-        $resultado = "é de maior";
+$resultado = "";
 
-    }else{
-        $resultado ="é de menor";
-    }
+if ($idade >= 18) {
+    $resultado = "é de maior";
+} else {
+    $resultado = "é de menor";
+}
 
 
 
@@ -21,33 +20,20 @@
 
 
 <!DOCTYPE html>
+
 <body>
-    <header>
-        <nav>
-         <form method="POST"></form>
-        </nav>
-    </header>
-    </body>
-    <main>
-        <section class="Cadastro">
-           
-        <h1>cadastro</h1>
-        
-        <form method="POST">
 
+    <h1>cadastro</h1>
 
-         <label>Nome:</label>
-    <input type="text" class="Nome"_id="nome" name="nome">
+    <form method="POST">
+        <label>Nome:</label>
+        <input type="text" class="Nome" id="nome" name="nome">
+
+        <label>IDADE:</label>
+        <input type="number" class="idade" id="idade" name="idade">
+
+        <button type="submit"> Cadastrar</button>
+    </form>
     
-    <label>IDADE:</label>
-    <input type="number" class="idade"_id="idade" name="idade">
-    <button type="submit"> Cadastrar</button>
-        </form>
-         <p> <?= $resultado ?> </p>
-    
-    
-         </form>
-        </section>
-    </main>
-    </body>
-    
+    <p> <?= $resultado ?> </p>
+</body>
