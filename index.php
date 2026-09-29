@@ -1,34 +1,15 @@
-<?php
-    $nome = "Kauan";
-    $idade = 17;
-    $altura = 1.80;
-    $matricula_ativa = true;
-    $resultado = "";
-
-    if($idade>=18){
-        $resultado = "é de maior";
-
-    }else{
-        $resultado ="é de menor";
-    }
-
-
-
-
-
-
-?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kauan D. Andrade</title>
     <link rel="stylesheet" href="portifolio.css">
 </head>
+
 <body>
-<!--MENU-->
+    <!--MENU-->
     <header>
         <div class="logo">
             <h2>Kauan <span>de Andrade</span></h2>
@@ -47,12 +28,12 @@
 
     <main>
         <!--seção de inicio-->
-        <section id = "inicio" class="inicio">
+        <section id="inicio" class="inicio">
             <div class="inicio-conteudo">
-                <p class="apresentacao" >olá eu sou </p>
+                <p class="apresentacao">olá eu sou </p>
                 <h1>Kauan de Andrade</h1>
                 <h2>desenvolvedor de softwere</h2>
-                <p class="descricao" > gosto de trabalhar com computador
+                <p class="descricao"> gosto de trabalhar com computador
 
                 </p>
                 <div class="botoes">
@@ -67,35 +48,35 @@
 
             <div class="titulo-secao">
                 <p>conheça um pouco</p>
-            <h2>sobre mim</h2>
+                <h2>sobre mim</h2>
             </div>
-            
+
 
             <div class="sobre-conteudo">
 
                 <div class="sobre-texto">
 
 
-                       <p> 
-                         desenvolvo softwere    
-                      </p>
-                            
-                        
-                        <p>
-                            atualmente estudo para ficar por dentro das novas mecanicas do mercado
-                        </p>
+                    <p>
+                        desenvolvo softwere
+                    </p>
+
+
+                    <p>
+                        atualmente estudo para ficar por dentro das novas mecanicas do mercado
+                    </p>
                 </div>
-                     <div class="habilidades">
-                        <div class="habilidade">
-                            <h3>HTML</h3>
-                            <p>estilização e criação de interface</p>
-                        </div>
-                        <!--div class="habilidade">
+                <div class="habilidades">
+                    <div class="habilidade">
+                        <h3>HTML</h3>
+                        <p>estilização e criação de interface</p>
+                    </div>
+                    <!--div class="habilidade">
                             <h3>PHP</h3>
                             <p></p>
                      
                         </div-->
-                    </div>
+                </div>
             </div>
         </section>
         <section id="projetos" class="projetos-secao">
@@ -108,24 +89,43 @@
             <div class="projetos">
                 <div class="card">
 
-                     <div class="numero-projeto">
-                    01
-                </div>
-                <h3>sistema de cadastro</h3>
-                <p>
-                    descrição do sistema do cadastro
-                </p>
+                    <div class="numero-projeto">
+                        01
+                    </div>
+                    <h3>sistema de cadastro</h3>
+                    <p>
+                        descrição do sistema do cadastro
+                    </p>
 
-                <div class="tecnologias">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <!--span>PHP</span-->
-                </div>
-                <a href="cadastro.html">ver projeto</a>
+                    <div class="tecnologias">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <!--span>PHP</span-->
+                    </div>
+                    <a href="cadastro.html">ver projeto</a>
                 </div>
 
-            </div>   
-           
+
+                <div class="card">
+
+                    <div class="numero-projeto">
+                        02
+                    </div>
+                    <h3>sistema de idade</h3>
+                    <p>
+                        descrição do sistema do idade
+                    </p>
+
+                    <div class="tecnologias">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <!--span>PHP</span-->
+                    </div>
+                    <a href="idade.php">ver projeto</a>
+                </div>
+
+            </div>
+
 
         </section>
         <!--seção contacto-->
@@ -147,12 +147,13 @@
         <p>
             desenvolvido por <a href="https://file:///C:/Users/Aluno/Desktop/os_sonhos_n_tem_fim/projeto/index.html">Kauan de Andrade</a>
         </p>
-            
+
         <p>
-        HTML+ CSS
+            HTML+ CSS
         </p>
     </footer>
 
-    
+
 </body>
+
 </html>
