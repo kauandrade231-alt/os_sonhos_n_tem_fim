@@ -31,8 +31,7 @@
 <!--MENU-->
     <header>
         <div class="logo">
-            <h2>  <?=   $resultado ?> </h2>
-            <!--<h2>Kauan <span>de Andrade</span></h2> -->
+            <h2>Kauan <span>de Andrade</span></h2>
 
         </div>
 
