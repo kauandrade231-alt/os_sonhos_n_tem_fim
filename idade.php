@@ -18,6 +18,8 @@
 
 
 ?>
+
+<p> <?= $resultado ?> </p>
 <!DOCTYPE html>
 <body>
     <header>
