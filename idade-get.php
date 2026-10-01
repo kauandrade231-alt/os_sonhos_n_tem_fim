@@ -1,3 +1,4 @@
+<!-- GET é informação pessoal -->
 <?php
 
 $nome = $_GET["nome"];

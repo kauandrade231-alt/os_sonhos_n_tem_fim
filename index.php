@@ -122,9 +122,16 @@
                         <!--span>PHP</span-->
                     </div>
                     <a href="idade.php">ver projeto</a>
+                
+                
                 </div>
 
-                    03
+                <div class="card">
+
+                
+                    <div class="numero-projeto">
+
+                        03
 
                     <h3>sistema de idade-GET</h3>
 
@@ -136,7 +143,20 @@
 
                         <span>HTML</span>
                         <span>CSS</span>
+            
+                    </div>
+                    <a href="idade-get.php"></a>
+
+
+
+                    </div>
+                    
+
+
+                   
+           
                 </div>
+            
             </div>
 
 
