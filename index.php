@@ -111,7 +111,7 @@
                     <div class="numero-projeto">
                         02
                     </div>
-                    <h3>sistema de idade</h3>
+                    <h3>sistema de idade-POST</h3>
                     <p>
                         descrição do sistema do idade
                     </p>
@@ -124,7 +124,22 @@
                     <a href="idade.php">ver projeto</a>
                 </div>
 
+                    03
+
+                    <h3>sistema de idade-GET</h3>
+
+                    <p>
+                        descrição do sistema do idade
+                    </p>
+
+                <div class="cybertecnologia">
+
+                        <span>HTML</span>
+                        <span>CSS</span>
+                </div>
             </div>
+
+
 
 
         </section>

@@ -5,7 +5,11 @@ $idade = $_GET["idade"];
 
 $resultado = "";
 
-if ($idade >= 18) {
+if($idade !==""){
+
+}
+
+if ($idade >=18) {
     $resultado = "é de maior";
 } else {
     $resultado = "é de menor";
