@@ -1,7 +1,7 @@
 <?php
 
-$nome = $_POST["nome"];
-$idade = $_POST["idade"];
+$nome = $_GET["nome"];
+$idade = $_GET["idade"];
 
 $resultado = "";
 
@@ -25,7 +25,7 @@ if ($idade >= 18) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>autenticador de idade-POST</title>
+    <title>autenticador de idade</title>
     <link rel="stylesheet" href="idade.css">
 </head>
 
@@ -34,9 +34,9 @@ if ($idade >= 18) {
 <body>
 
 
-    <h1>cadastro-POST</h1>
+    <h1>cadastro</h1>
 
-    <form method="POST">
+    <form method="GET">
         <label>Nome:</label>
         <input type="text" class="Nome" id="nome" name="nome">
 
