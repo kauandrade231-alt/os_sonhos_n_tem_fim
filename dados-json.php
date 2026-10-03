@@ -73,7 +73,7 @@ $jsonatualizado = json_encode(
 //SALVAR NO ARQUIVO JSON
 
 file_put_contents(__DIR__ . "/dados/intro.json", $jsonatualizado);
-
+}
 //lê o arquivo JSON
 
 $conteudoJson = file(__DIR__ . "/dados/intro.json");
@@ -169,7 +169,7 @@ $alunos = json_decode($conteudoJson,true);
     
     
     
-    ?>
+    
     
 
 
