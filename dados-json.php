@@ -84,7 +84,7 @@ $alunos = json_decode($conteudoJson,true);
 
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -128,18 +128,40 @@ $alunos = json_decode($conteudoJson,true);
     <br><br>
     <label>Prova 3:</label>
     <input type="number" name="historia_prova3" min="0" max="10" step="0.1" required>
-
+    <b></b>
+    <button type="submit">Enviar</button>
     </form>
 
     <h1>ALUNOS CADASTRADOS</h1>
 
-    <?php
-    
-        foreach (){
+    <?php foreach ($alunos as $aluno) { ?>
 
-            
+        <h2> <?= $aluno["nome"]  ?> </h2>
+        <p>idade:<?= $aluno["idade"] ?> </p>
 
-        }
+        <!--PORTUGUS-->
+
+        <h1>PORTUGUÊS</h1>
+        <p>Prova 1: <?= $aluno["notas"]["portugues"]["prova1"] ?></p>
+        <p>Prova 2: <?= $aluno["notas"]["portugues"]["prova2"] ?></p>
+        <p>Prova 3: <?= $aluno["notas"]["portugues"]["prova3"] ?></p>
+
+         <!--MATEMATICA-->
+
+         <h1>MATEMATICA</h1>
+        <p>Prova 1: <?= $aluno["notas"]["matematica"]["prova1"] ?></p>
+        <p>Prova 2: <?= $aluno["notas"]["matematica"]["prova2"] ?></p>
+        <p>Prova 3: <?= $aluno["notas"]["matematica"]["prova3"] ?></p>
+
+         <!--história-->
+
+         <h1>historia</h1>
+        <p>Prova 1: <?= $aluno["notas"]["história"]["prova1"] ?></p>
+        <p>Prova 2: <?= $aluno["notas"]["história"]["prova2"] ?></p>
+        <p>Prova 3: <?= $aluno["notas"]["história"]["prova3"] ?></p>
+
+
+    <?php } ?>
     
     
     
