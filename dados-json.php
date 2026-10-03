@@ -53,7 +53,7 @@ $novoaluno = [
 
 //SERVE PARA LER/ABRIR ARQUIVO JSON
 
-$conteudoJson=file_get_contents(__DIR__ . "dados/intro.json");
+$conteudoJson=file_get_contents(__DIR__ . "/dados/intro.json");
 
 //SERVE PARA CONVERTAR JSONS PARA ARRAY PHP
 //o true ser para converter o json em array associativo para php ler
@@ -61,7 +61,7 @@ $alunos=json_decode($conteudoJson,true);
 
 //adicionar o novo aluno 
 
-$alunos[]= +$novoaluno;
+$alunos[] = $novoaluno;
 
 //CONVERTER O ARRAY PHP PARA JSON
 
