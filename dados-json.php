@@ -1,4 +1,6 @@
 <?php
+
+echo "DEBUG 1";
 //Verifica se o formulario foi enviado usando o método POST
 if($_SERVER["REQUEST_METHOD"]=="POST"){
 $nome = $_POST["nome"];
@@ -23,6 +25,7 @@ $historia_prova1 = $_POST["historia_prova1"];
 $historia_prova2 = $_POST["historia_prova2"];
 $historia_prova3 = $_POST["historia_prova3"];
 
+echo "DEBUG 2";
 //organiza os dados em um array
 $novoaluno = [
 
@@ -53,6 +56,7 @@ $novoaluno = [
 
 //SERVE PARA LER/ABRIR ARQUIVO JSON
 
+echo "DEBUG 3";
 $conteudoJson=file_get_contents(__DIR__ . "/dados/intro.json");
 
 //SERVE PARA CONVERTAR JSONS PARA ARRAY PHP
@@ -63,6 +67,7 @@ $alunos=json_decode($conteudoJson,true);
 
 $alunos[] = $novoaluno;
 
+echo "DEBUG 4";
 //CONVERTER O ARRAY PHP PARA JSON
 
 $jsonatualizado = json_encode(
@@ -74,6 +79,9 @@ $jsonatualizado = json_encode(
 
 file_put_contents(__DIR__ . "/dados/intro.json", $jsonatualizado);
 }
+
+
+echo "DEBUG 5";
 //lê o arquivo JSON
 
 $conteudoJson = file(__DIR__ . "/dados/intro.json");
@@ -82,6 +90,7 @@ $conteudoJson = file(__DIR__ . "/dados/intro.json");
 
 $alunos = json_decode($conteudoJson,true);
 
+echo "DEBUG 6";
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">

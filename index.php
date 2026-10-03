@@ -157,7 +157,6 @@
            
                 </div>
 
-                <div class="projetos">
                 <div class="card">
 
                     <div class="numero-projeto">
