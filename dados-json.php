@@ -168,9 +168,9 @@ echo "DEBUG 6";
         <!--história-->
 
         <h1>historia</h1>
-        <p>Prova 1: <?= $aluno["notas"]["história"]["prova1"] ?></p>
-        <p>Prova 2: <?= $aluno["notas"]["história"]["prova2"] ?></p>
-        <p>Prova 3: <?= $aluno["notas"]["história"]["prova3"] ?></p>
+        <p>Prova 1: <?= $aluno["notas"]["historia"]["prova1"] ?></p>
+        <p>Prova 2: <?= $aluno["notas"]["historia"]["prova2"] ?></p>
+        <p>Prova 3: <?= $aluno["notas"]["historia"]["prova3"] ?></p>
 
 
     <?php } ?>
