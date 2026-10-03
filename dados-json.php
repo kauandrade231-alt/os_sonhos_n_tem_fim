@@ -3,6 +3,7 @@
 echo "DEBUG 1";
 //Verifica se o formulario foi enviado usando o método POST
 if($_SERVER["REQUEST_METHOD"]=="POST"){
+    echo "DEBUG 2";
 $nome = $_POST["nome"];
 $idade = $_POST["idade"];
 
