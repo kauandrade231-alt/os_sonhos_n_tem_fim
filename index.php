@@ -163,17 +163,18 @@
                     <div class="numero-projeto">
                         04
                     </div>
-                    <h3>sistema de cadastro</h3>
+                    <h3>sistema json</h3>
                     <p>
-                        descrição do sistema do cadastro
+                        descrição do sistema do json
                     </p>
 
                     <div class="tecnologias">
                         <span>HTML</span>
                         <span>CSS</span>
                         <!--span>PHP</span-->
+                     <a href="dados-json.php">ver projeto</a>
                     </div>
-                    <a href="dados-json.php">ver projeto</a>
+                   
                 </div>
             
             </div>
