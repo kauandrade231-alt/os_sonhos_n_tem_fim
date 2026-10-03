@@ -51,23 +51,37 @@ $novoaluno = [
     ]
 ];
 
-echo"<h2> DADOS RECEBIDOS:</h2>";
+//SERVE PARA LER/ABRIR ARQUIVO JSON
 
-echo "Nome " . $nome . "<br>";
-echo "idade " . $idade . "<br><br>";
+$conteudoJson=file_get_contents(__DIR__ . "dados/intro.json");
 
-echo "<strong>Português:</strong><br>";
-echo"Prova 1:".$portugues_prova1 . "<br>;";
-echo"Prova 2:".$portugues_prova2 . "<br>";
-echo"Prova 3:".$portugues_prova3 . "<br><br>";
+//SERVE PARA CONVERTAR JSONS PARA ARRAY PHP
+//o true ser para converter o json em array associativo para php ler
+$alunos=json_decode($conteudoJson,true);
 
-echo "<strong>Matemática:</strong><br>";
-echo"Prova 1:".$matematica_prova1 . "<br>;";
-echo"Prova 2:".$matematica_prova2 . "<br>";
-echo"Prova 3:".$matematica_prova3 . "<br><br>";
+//adicionar o novo aluno 
 
+$alunos[]= +$novoaluno;
 
-}
+//CONVERTER O ARRAY PHP PARA JSON
+
+$jsonatualizado = json_encode(
+    $alunos,
+    JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE
+);
+
+//SALVAR NO ARQUIVO JSON
+
+file_put_contents(__DIR__ . "/dados/intro.json", $jsonatualizado);
+
+//lê o arquivo JSON
+
+$conteudoJson = file(__DIR__ . "/dados/intro.json");
+
+//converte o JSON para ARRAY PHP
+
+$alunos = json_decode($conteudoJson,true);
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -78,7 +92,7 @@ echo"Prova 3:".$matematica_prova3 . "<br><br>";
 </head>
 <body>
     <h1>CADASTRO DE NOTAS</h1>
-    <form method="POST"></form>
+    <form method="POST">
     <label>"Nome:</label>
     <input type="text" name="nome" required>
     <br><br>
@@ -115,7 +129,25 @@ echo"Prova 3:".$matematica_prova3 . "<br><br>";
     <label>Prova 3:</label>
     <input type="number" name="historia_prova3" min="0" max="10" step="0.1" required>
 
+    </form>
+
+    <h1>ALUNOS CADASTRADOS</h1>
+
+    <?php
     
+        foreach (){
+
+            
+
+        }
+    
+    
+    
+    
+    
+    
+    
+    ?>
     
 
 
