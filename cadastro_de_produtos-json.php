@@ -111,6 +111,8 @@ echo "DEBUG 6";
         <label>Pais:</label>
         <input type="text" name="pais" min="0" max="10" step="0.1" required>
 
+        <button type="submit">Cadastrar</button>
+
        
     </form>
 
