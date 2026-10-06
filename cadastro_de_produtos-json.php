@@ -131,7 +131,7 @@ echo "DEBUG 6";
 
         <p>Fabricante: <?= $item["fabricante"] ?></p>
 
-        <p>Pais: <?= $cadastro["pais de origem"] ?></p>
+        <p>Pais: <?= $item["pais de origem"] ?></p>
         
 
 
