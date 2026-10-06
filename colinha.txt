@@ -106,3 +106,74 @@ autofill        :auto-fillinput:                           Seleciona elementos <
 
 
 :nth-of-type()	p:nth-of-type(2)	               Seleciona o N-ésimo elemento do seu tipo dentro do elemento pai.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CRUD = 
+
+CREAT:
+cadastrar
+
+joão - 18 anos
+
+
+READ:
+mostrar
+
+Lucas-21
+Maria-12
+joão - 18 anos
+
+
+
+
+UPDATE: 
+
+
+
+
+
+ DELETE:
+
+
