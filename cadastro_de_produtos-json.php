@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $preco_do_produto = $_POST["preco"];
     $estoque_do_produto = $_POST["estoque"];
     $fabricante_do_produto = $_POST["fabricante"];
-    $pais_de_origem = $_POST["pais "];
+    $pais_de_origem = $_POST["pais"];
 
 
     echo "DEBUG 2";
@@ -88,28 +88,28 @@ echo "DEBUG 6";
         <br><br>
 
          <label>categoria</label>
-        <input type="text" name="categoria" min="0" max="10" step="0.1" required>
+        <input type="text" name="categoria" required>
         <br><br>
         
         <label>Marca:</label>
-        <input type="text" name="marca" min="0" max="10" step="0.1" required>
+        <input type="text" name="marca"required>
         <br><br>
         
        
         
         <label>Preço:</label>
-        <input type="number" name="preco" min="0" max="10" step="0.1" required>
+        <input type="number" name="preco" min="0"  step="0.1" required>
         <br><br>
         <label>Estoque:</label>
-        <input type="number" name="estoque" min="0" max="10" step="0.1" required>
+        <input type="number" name="estoque" min="0"  step="0.1" required>
         <br><br>
         
         <label>Fabricante:</label>
-        <input type="text" name="fabricante" min="0" max="10" step="0.1" required>
+        <input type="text" name="fabricante"  required>
         <br><br>
        
         <label>Pais:</label>
-        <input type="text" name="pais" min="0" max="10" step="0.1" required>
+        <input type="text" name="pais"  required>
 
         <button type="submit">Cadastrar</button>
 
@@ -123,7 +123,7 @@ echo "DEBUG 6";
         <h2> <?= $item["nome do produto"]  ?> </h2>
         <p>categoria<?= $item["categoria"] ?> </p>
         
-        <p>Marca: <?= $item["Marca"] ?></p>
+        <p>Marca: <?= $item["marca"] ?></p>
        
         <p>Preço: <?= $item["preço"] ?></p>
        
