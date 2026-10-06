@@ -101,7 +101,7 @@ echo "DEBUG 6";
         <input type="number" name="preco" min="0"  step="0.1" required>
         <br><br>
         <label>Estoque:</label>
-        <input type="number" name="estoque" min="0"  step="0.1" required>
+        <input type="number" name="estoque" min="0"  step="1" required>
         <br><br>
         
         <label>Fabricante:</label>
