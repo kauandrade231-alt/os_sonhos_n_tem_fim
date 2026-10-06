@@ -104,7 +104,7 @@ echo "DEBUG 6";
         <br><br>
         
         <label>Fabricante:</label>
-        <input type="number" name="fabricante" min="0" max="10" step="0.1" required>
+        <input type="text" name="fabricante" min="0" max="10" step="0.1" required>
         <br><br>
        
         <label>Pais:</label>
