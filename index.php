@@ -176,6 +176,29 @@
                    
                 </div>
             
+                <div class="card">
+
+                    <div class="numero-projeto">
+                        05
+                    </div>
+                    <h3>sistema de cadastro</h3>
+                    <p>
+                        cadastro de produtos
+                    </p>
+
+                    <div class="tecnologias">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <!--span>PHP</span-->
+                    </div>
+                    <a href="cadastro_de_produtos-json.php">ver projeto</a>
+                </div>
+
+
+
+
+
+
             </div>
 
 
