@@ -7,25 +7,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     
     //recebe as informações para cadastro dos produtos
-    $nome = $_POST["nome do preoduto"];
-    $categoria = $_POST["categoria"];
-    $marca = $_POST["marca"];
-    $preco = $_POST["preço"];
-    $estoque = $_POST["estoque"];
-    $fabricante = $_POST["fabricante"];
-    $paias = $_POST["pais de origem"];
+    $nome_do_produto = $_POST["nome_do_produto"];
+    $categoria_do_produto = $_POST["categoria"];
+    $marca_do_produto = $_POST["marca"];
+    $preco_do_produto = $_POST["preco"];
+    $estoque_do_produto = $_POST["estoque"];
+    $fabricante_do_produto = $_POST["fabricante"];
+    $pais_de_origem = $_POST["pais "];
 
 
     echo "DEBUG 2";
     //organiza os dados em um array
     $cadastro = [
-        "nome do produto" => $nome,
-        "categoria"=>$categoria,
-        "marca"=> $marca,
-        "preço"=>$preco,
-        "estoque" => $estoque,
-        "fabricante"=> $fabricante,
-        "pais de origem"=>$pais,
+        "nome do produto" => $nome_do_produto,
+        "categoria"=>$categoria_do_produto,
+        "marca"=> $marca_do_produto,
+        "preço"=>$preco_do_produto,
+        "estoque" => $estoque_do_produto,
+        "fabricante"=> $fabricante_do_produto,
+        "pais de origem"=>$pais_de_origem,
         
 
             
@@ -39,17 +39,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     //SERVE PARA CONVERTAR JSONS PARA ARRAY PHP
     //o true ser para converter o json em array associativo para php ler
-    $cadastro = json_decode($conteudoJson, true);
+    $produtosExixtentes = json_decode($conteudoJson, true);
 
     //adicionar o novo aluno 
 
-    $cadastro[] = $novocadastro;
+    $produtosExixtentes[] = $cadastro;
 
     echo "DEBUG 4";
     //CONVERTER O ARRAY PHP PARA JSON
 
     $jsonatualizado = json_encode(
-        $cadastro,
+        $produtosExixtentes,
         JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE
     );
 
@@ -62,11 +62,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 echo "DEBUG 5";
 //lê o arquivo JSON
 
+
 $conteudoJson = file_get_contents(__DIR__ . "/dados/produtos.json");
 
 //converte o JSON para ARRAY PHP
 
-$cadastro = json_decode($conteudoJson, true);
+$produtosCadastrados = json_decode($conteudoJson, true);
 
 echo "DEBUG 6";
 ?>
@@ -76,31 +77,31 @@ echo "DEBUG 6";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Documento</title>
 </head>
 
 <body>
     <h1>CADASTRO PRODUTOS</h1>
     <form method="POST">
         <label>"Nome do produto:</label>
-        <input type="text" name="nome" required>
+        <input type="text" name="nome_do_produto" required>
         <br><br>
 
          <label>categoria</label>
-        <input type="text" name="categoria_do_produto" min="0" max="10" step="0.1" required>
+        <input type="text" name="categoria" min="0" max="10" step="0.1" required>
         <br><br>
         
         <label>Marca:</label>
-        <input type="text" name="marca_do_produto" min="0" max="10" step="0.1" required>
+        <input type="text" name="marca" min="0" max="10" step="0.1" required>
         <br><br>
         
        
         
         <label>Preço:</label>
-        <input type="number" name="preço_do_produto" min="0" max="10" step="0.1" required>
+        <input type="number" name="preco" min="0" max="10" step="0.1" required>
         <br><br>
         <label>Estoque:</label>
-        <input type="number" name="estoque_de_produto" min="0" max="10" step="0.1" required>
+        <input type="number" name="estoque" min="0" max="10" step="0.1" required>
         <br><br>
         
         <label>Fabricante:</label>
@@ -108,27 +109,27 @@ echo "DEBUG 6";
         <br><br>
        
         <label>Pais:</label>
-        <input type="text" name="pais_de_origem" min="0" max="10" step="0.1" required>
+        <input type="text" name="pais" min="0" max="10" step="0.1" required>
 
        
     </form>
 
     <h1>PRODUTOS CADASTRADOS</h1>
 
-    <?php foreach ($cadastros as $cadastro) { ?>
+    <?php foreach ($produtosCadastrados as $item) { ?>
 
-        <h2> <?= $cadastro["nome"]  ?> </h2>
-        <p>produto<?= $cadastro["categoria"] ?> </p>
+        <h2> <?= $item["nome do produto"]  ?> </h2>
+        <p>categoria<?= $item["categoria"] ?> </p>
         
-        <p>Marca: <?= $cadastro["cadastro"]["produto"] ?></p>
+        <p>Marca: <?= $item["Marca"] ?></p>
        
-        <p>Peço: <?= $cadastro["cadastro"]["produto"] ?></p>
+        <p>Preço: <?= $item["preço"] ?></p>
        
-        <p>Categoria: <?= $cadastro["categoria"]["produto"] ?></p>
+        <p>Estoque: <?= $item["estoque"] ?></p>
 
-        <p>Fabricante: <?= $cadastro["fabricante"] ?></p>
+        <p>Fabricante: <?= $item["fabricante"] ?></p>
 
-        <p>Pais: <?= $cadastro["pais"] ?></p>
+        <p>Pais: <?= $cadastro["pais de origem"] ?></p>
         
 
 
