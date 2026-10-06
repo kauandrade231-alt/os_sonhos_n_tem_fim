@@ -85,16 +85,16 @@ echo "DEBUG 6";
         <label>"Nome do produto:</label>
         <input type="text" name="nome" required>
         <br><br>
-        <label>categoria:</label>
-        
+
+         <label>categoria</label>
+        <input type="text" name="categoria_do_produto" min="0" max="10" step="0.1" required>
+        <br><br>
         
         <label>Marca:</label>
         <input type="text" name="marca_do_produto" min="0" max="10" step="0.1" required>
         <br><br>
         
-        <label>categoria</label>
-        <input type="text" name="categoria_do_produto" min="0" max="10" step="0.1" required>
-        <br><br>
+       
         
         <label>Preço:</label>
         <input type="number" name="preço_do_produto" min="0" max="10" step="0.1" required>
