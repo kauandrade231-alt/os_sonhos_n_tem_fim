@@ -11,7 +11,11 @@ require "fucoes.php";
 </head>
 <body>
     <h1><?= $nomeEscola ?></h1>
-    <h2><?= $saudacao ?></h2>
-    <p><?= comprimentar("kauan") ?></p>
+    <h2><?= saudacao() ?></h2>
+    <p><?= cumprimentar("kauan") ?></p>
+    <p>
+        resultado da soma:
+        <?= somar(10,5) ?>
+    </p>
 </body>
 </html>
