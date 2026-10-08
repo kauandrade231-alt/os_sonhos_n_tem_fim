@@ -195,7 +195,7 @@
                 </div>
 
                 <div class="numero-projeto">
-                        05
+                        06
                     </div>
                     <h3>sistema de cadastro</h3>
                     <p>
@@ -207,7 +207,7 @@
                         <span>CSS</span>
                         <!--span>PHP</span-->
                     </div>
-                    <a href="atividades/funcoes.php">ver projeto</a>
+                    <a href="atividades/funcoes2.php">ver projeto</a>
                 </div>
 
 

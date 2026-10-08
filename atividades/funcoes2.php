@@ -17,5 +17,6 @@ require "fucoes.php";
         resultado da soma:
         <?= somar(10,5) ?>
     </p>
+    <button>clique aqui!</button>
 </body>
 </html>
