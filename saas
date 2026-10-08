@@ -1,0 +1,9 @@
+cd www
+git pull
+
+(SE DER ABORTING)
+
+cd ..
+rm -rf www
+git clone (LINK DO SEU REPOSITORIO) www
+cd www
