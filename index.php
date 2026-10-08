@@ -102,7 +102,7 @@
                         <span>CSS</span>
                         <!--span>PHP</span-->
                     </div>
-                    <a href="cadastro.html">ver projeto</a>
+                    <a href="atividades/cadastro.html">ver projeto</a>
                 </div>
 
 
@@ -121,7 +121,7 @@
                         <span>CSS</span>
                         <!--span>PHP</span-->
                     </div>
-                    <a href="idade.php">ver projeto</a>
+                    <a href="atividades/idade.php">ver projeto</a>
                 
                 
                 </div>
@@ -145,7 +145,7 @@
                         <span>CSS</span>
             
                     </div>
-                    <a href="idade-get.php"></a>
+                    <a href="atividades/idade-get.php"></a>
 
 
 
@@ -171,7 +171,7 @@
                         <span>HTML</span>
                         <span>CSS</span>
                         <!--span>PHP</span-->
-                     <a href="dados-json.php">ver projeto</a>
+                     <a href="atividades/dados-json.php">ver projeto</a>
                     </div>
                    
                 </div>
@@ -191,7 +191,7 @@
                         <span>CSS</span>
                         <!--span>PHP</span-->
                     </div>
-                    <a href="cadastro_de_produtos-json.php">ver projeto</a>
+                    <a href="atividades/cadastro_de_produtos-json.php">ver projeto</a>
                 </div>
 
                 <div class="numero-projeto">
