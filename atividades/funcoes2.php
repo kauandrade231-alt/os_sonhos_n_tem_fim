@@ -8,6 +8,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $media = calcularMedia($nota1, $nota2);
 
     $situacao = verificarStatus($media);
+
+    
 }
 ?>
 
