@@ -1,5 +1,14 @@
 <?php
-require "fucoes.php";
+require_once "funcoes.php";
+
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+    $nota1 = $_POST["nota1"];
+    $nota2 = $_POST["nota2"];
+
+    $media = calcularMedia($nota1, $nota2);
+
+    $situacao = verificarStatus($media);
+}
 ?>
 
 <!DOCTYPE html>
@@ -10,13 +19,6 @@ require "fucoes.php";
     <title>Funções no front</title>
 </head>
 <body>
-    <h1><?= $nomeEscola ?></h1>
-    <h2><?= saudacao() ?></h2>
-    <p><?= cumprimentar("kauan") ?></p>
-    <p>
-        resultado da soma:
-        <?= somar(10,5) ?>
-    </p>
-    <button>clique aqui!</button>
+    
 </body>
 </html>
