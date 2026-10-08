@@ -210,7 +210,23 @@
                     <a href="atividades/funcoes2.php">ver projeto</a>
                 </div>
 
+                 <div class="card">
 
+                    <div class="numero-projeto">
+                        07
+                    </div>
+                    <h3>assitencia tecnica</h3>
+                    <p>
+                        descrição do sistema do cadastro
+                    </p>
+
+                    <div class="tecnologias">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <!--span>PHP</span-->
+                    </div>
+                    <a href="helpdesk-func.php">ver projeto</a>
+                </div>
 
 
             </div>
