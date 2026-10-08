@@ -24,7 +24,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <label>Setor de trabalho</label>
     <input type="text" name="setor">
 
-
+    
 </form>
 </body>
 </html>
