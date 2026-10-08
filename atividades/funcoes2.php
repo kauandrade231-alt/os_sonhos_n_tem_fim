@@ -9,7 +9,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
     $situacao = verificarStatus($media);
 
-    
+
 }
 ?>
 
@@ -21,6 +21,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <title>Funções no front</title>
 </head>
 <body>
-    
+    <form method="POST">
+    <label>NOTA 1:</label>
+    <input type="number" name="nota1">
+    <label>NOTA 2:</label>
+    <input type="number" name="nota2">
+
+    <button type="submit">ENVIAR</button>
+    </form>
+    <h2><?= $situacao ?></h2>
 </body>
 </html>

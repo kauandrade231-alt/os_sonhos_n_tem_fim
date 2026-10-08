@@ -29,6 +29,12 @@ function verificarStatus($media)
 {
     //media é 7
 
+    if($media >= 7){
+        return "APROVADO!";
+    }else {
+        return "REPROVADO";
+    }
+
 
 
 }
