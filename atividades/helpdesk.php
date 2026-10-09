@@ -1,5 +1,5 @@
 <?php
-$arquivo="dados/chanados.json";
+$arquivo="dados/chamados.json";
 require_once "helpdesk-func.php";
 
 $mensagemErro = "";
