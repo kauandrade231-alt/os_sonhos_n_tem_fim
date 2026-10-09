@@ -1,4 +1,5 @@
 <?php
+
 function saudacao(){
     return "Bem vindo.Como posso lhe ajudar";
 

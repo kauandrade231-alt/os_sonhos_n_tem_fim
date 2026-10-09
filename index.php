@@ -225,7 +225,7 @@
                         <span>CSS</span>
                         <!--span>PHP</span-->
                     </div>
-                    <a href="helpdesk-func.php">ver projeto</a>
+                    <a href="helpdesk.php">ver projeto</a>
                 </div>
 
 
