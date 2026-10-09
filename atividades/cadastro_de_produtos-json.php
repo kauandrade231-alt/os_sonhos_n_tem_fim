@@ -35,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     //SERVE PARA LER/ABRIR ARQUIVO JSON
 
     echo "DEBUG 3";
-    $conteudoJson = file_get_contents(__DIR__ . "/dados/produtos.json");
+    $conteudoJson = file_get_contents(__DIR__ . "dados/produtos.json");
 
     //SERVE PARA CONVERTAR JSONS PARA ARRAY PHP
     //o true ser para converter o json em array associativo para php ler

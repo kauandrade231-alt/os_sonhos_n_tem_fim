@@ -9,6 +9,26 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $setor= $_POST["setor"];
     $equipamentoDanificado=$_POST["equipamentoDanificado"];
 
+
+    $cadastro=[
+    "nome do trabalhador" => $nome,
+    "setor do trabalhador" => $setor,
+    "equipamento danificado"=>$equipamentoDanificado,
+
+
+
+
+    ];
+    $conteudoJson = file_get_contents(__DIR__."dados/chamados.json");
+
+
+    $problemasExixtentes = json_decode($conteudoJson,true);
+
+    $problemasExixtentes[] = $cadastro;
+
+    $jsonatualizado = json_encode(
+        JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE
+    );
 }
 
 ?>
