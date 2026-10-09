@@ -25,3 +25,6 @@ function problema($prioridade){
 
 
 ?>
+
+
+<!--acredito não ter entendido como programar o php com eficiência
