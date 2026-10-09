@@ -2,6 +2,8 @@
 $arquivo="dados/chanados.json";
 require_once "helpdesk-func.php";
 
+$mensagemErro = "";
+$mensagemSucesso = "";
 if($_SERVER["REQUEST_METHOD"] == "POST"){
     $nome=$_POST["nome"];
     $setor= $_POST["setor"];
@@ -23,8 +25,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <input type="text" name="nome">
     <label>Setor de trabalho</label>
     <input type="text" name="setor">
+    <label>problema encontrado</label>
+    <input type="text" name= "problema">
+    <label>nivel de prioridade</label>
+    <input type="text" name= propridade> 
+<button type="submit">ENVIAR</button>
 
-    
 </form>
 </body>
 </html>
