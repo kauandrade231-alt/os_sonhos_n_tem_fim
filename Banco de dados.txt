@@ -1,6 +1,9 @@
 
 ETAPA 1
 
+loja da Pear
+
+ETAPA 2
 
 CREATE TABLE clientes(
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -49,5 +52,22 @@ CREATE TABLE ITENS_PEDIDO (
 
 
 
+ETAPA 4
 
 
+INSERT INTO clientes(nome, email,telefone,data_nascimento,data_cadastro,ativo) VALUES 
+('Kauan','kauan@gmail','2395782356','2009-05-24','2024-04-07 10:00:00',1), 
+('Pedro', 'pedro@gmail','4532476635','1999-11-02','2015-06-03 14:30:00',1), 
+('Mathias','matheus@gmail','7349782356','2009-12-04','2021-06-02 16:20:00',1), 
+('Vitor', 'vitor@gmail','4213646350','2003-12-06','2015-10-07 12:25:00',0), 
+('Gustavo','gustavo@gmail','3752053673','1967-05-08','2022-03-25 15:11:00',1), 
+('Pablo', 'pablo@gmail','971234635','1956-06-12','2016-03-01 14:30:00',1), 
+('Leticia','Leticia@gmail','56842859024','2009-05-23','2023-05-02 09:13:00',0),
+('Garfild', 'Garfiel@gmail','6516732835','1956-10-12','2013-04-03 14:30:00',1);
+
+INSERT INTO CATEGORIAS (nome, descricao) VALUES
+('Smartphones', 'Dispositivos moveis e acessorios'),
+('Notebooks', 'Computadores portateis para uso pessoal e profissional'),
+('Perifericos', 'Teclados, mouses e acessorios de informatica'),
+('Monitores', 'Telas de alta definicao para trabalho e jogos'),
+('Audio', 'Fones de ouvido e caixas de som');
