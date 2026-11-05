@@ -3,7 +3,7 @@ ETAPA 1
 
 loja da Pear
 
-ETAPA 2
+ETAPA 2 e 3
 
 CREATE TABLE clientes(
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -71,3 +71,78 @@ INSERT INTO CATEGORIAS (nome, descricao) VALUES
 ('Perifericos', 'Teclados, mouses e acessorios de informatica'),
 ('Monitores', 'Telas de alta definicao para trabalho e jogos'),
 ('Audio', 'Fones de ouvido e caixas de som');
+
+INSERT INTO produtos (nome,descricao,preco,quantidade,categoria_id,ativo) VALUES
+('Smartphone X', '128GB de memória', 1500.00, 25, 1, 1),
+('Smartphone Y', '64GB de memória', 800.00, 15, 1, 1),
+('Capinha para Celular', 'Capinha transparente', 30.00, 50, 1, 1),
+('Notebook Gamer', 'Intel i7 16GB SSD 512GB', 4500.00, 8, 2, 1),
+('Notebook Office', 'Intel i3 8GB SSD 256GB', 2200.00, 12, 2, 1),
+('Mouse Sem Fio', 'Mouse óptico ergonômico', 45.00, 30, 3, 1),
+('Teclado Mecânico', 'Switch blue RGB', 250.00, 5, 3, 1),
+('Mousepad Gamer', 'Tamanho XL', 40.00, 100, 3, 1),
+('Monitor 24 polegadas', 'Painel IPS Full HD 75Hz', 650.00, 7, 4, 1),
+('Monitor 27 polegadas', 'Curvo 144Hz 1ms', 1200.00, 4, 4, 1),
+('Fone de Ouvido Bluetooth', 'Bateria até 20 horas', 150.00, 20, 5, 1),
+('Caixa de Som Portátil', 'À prova d água 10W', 180.00, 15, 5, 1),
+('Cabo HDMI 2m', 'Suporte 4K', 25.00, 80, 3, 1),
+('Suporte para Notebook', 'Alumínio ajustável', 90.00, 18, 3, 0),
+('Protetor de Tela', 'Vidro temperado', 20.00, 60, 1, 0);
+
+INSERT INTO PRODUTOS (nome, descricao, preco, quantidade, categoria_id, ativo) VALUES
+('Smartphone X', '128GB de memória', 1500.00, 25, 1, 1),
+('Smartphone Y', '64GB de memória', 800.00, 15, 1, 1),
+('Capinha para Celular', 'Capinha transparente', 30.00, 50, 1, 1),
+('Notebook Gamer', 'Intel i7 16GB SSD 512GB', 4500.00, 8, 2, 1),
+('Notebook Office', 'Intel i3 8GB SSD 256GB', 2200.00, 12, 2, 1),
+('Mouse Sem Fio', 'Mouse óptico ergonômico', 45.00, 30, 3, 1),
+('Teclado Mecânico', 'Switch blue RGB', 250.00, 5, 3, 1),
+('Mousepad Gamer', 'Tamanho XL', 40.00, 100, 3, 1),
+('Monitor 24 polegadas', 'Painel IPS Full HD 75Hz', 650.00, 7, 4, 1),
+('Monitor 27 polegadas', 'Curvo 144Hz 1ms', 1200.00, 4, 4, 1),
+('Fone de Ouvido Bluetooth', 'Bateria até 20 horas', 150.00, 20, 5, 1),
+('Caixa de Som Portátil', 'À prova d água 10W', 180.00, 15, 5, 1),
+('Cabo HDMI 2m', 'Suporte 4K', 25.00, 80, 3, 1),
+('Suporte para Notebook', 'Alumínio ajustável', 90.00, 18, 3, 0),
+('Protetor de Tela', 'Vidro temperado', 20.00, 60, 1, 0);
+
+
+INSERT INTO pedidos(cliente_id,data_pedido,valor_total) VALUES 
+(3,'2024-06-23-14:35:42',1530.00),
+(4,'2024-06-23-15:23:15', 250.00),
+(5,'2024-06-23-09:42:31',4545.00),
+(3, '2024-02-03 09:30:00', 800.00),
+(4, '2024-02-04 16:00:00', 2200.00),
+(5, '2024-02-06 18:10:00', 650.00),
+(6, '2024-02-07 12:00:00', 150.00),
+(7, '2024-02-08 15:45:00', 180.00),
+(2, '2024-02-09 17:00:00', 1200.00),
+(3, '2024-02-10 13:25:00', 115.00);
+
+INSERT INTO ITENS_PEDIDO (pedido_id, produto_id, quantidade, preco_unitario) VALUES
+(1, 1, 1, 1500.00),
+(1, 3, 1, 30.00),
+(2, 7, 1, 250.00),
+(3, 4, 1, 4500.00),
+(3, 6, 1, 45.00),
+(4, 2, 1, 800.00),
+(5, 5, 1, 2200.00),
+(6, 9, 1, 650.00),
+(7, 11, 1, 150.00),
+(8, 12, 1, 180.00),
+(9, 10, 1, 1200.00),
+(10, 6, 1, 45.00),
+(10, 8, 1, 40.00),
+(10, 13, 1, 25.00),
+(1, 8, 1, 40.00),
+(2, 13, 2, 25.00),
+(3, 8, 2, 40.00),
+(4, 3, 2, 30.00),
+(5, 6, 2, 45.00),
+(6, 13, 4, 25.00);
+
+etapa 5 
+
+UPDATE produtos SET preco = 1600.00 WHERE id = 1;
+UPDATE produtos SET preco = 4300.00 WHERE id = 4;
+UPDATE produtos SET preco = 230.00 WHERE id = 7;
