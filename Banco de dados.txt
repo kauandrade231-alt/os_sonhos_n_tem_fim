@@ -141,8 +141,27 @@ INSERT INTO ITENS_PEDIDO (pedido_id, produto_id, quantidade, preco_unitario) VAL
 (5, 6, 2, 45.00),
 (6, 13, 4, 25.00);
 
-etapa 5 
+ETAPA 5 
 
 UPDATE produtos SET preco = 1600.00 WHERE id = 1;
 UPDATE produtos SET preco = 4300.00 WHERE id = 4;
 UPDATE produtos SET preco = 230.00 WHERE id = 7;
+
+UPDATE produtos SET quantidade = 20 WHERE id = 1;
+
+UPDATE clientes SET ativo = 0 WHERE id = 1;
+
+UPDATE categorias SET descrisao = 'smartphone,celulares e uma variedade de acessorios' WHERE id = 1;
+
+INSERT INTO produtos(nome,descricao,preco,quantidade,categoria_id,ativo) VALUES
+('placa de video ','rtx 5090',29249.00,23,1,1);
+DELETE FROM produtos WHERE nome = 'placa de video'; 
+
+SELECT * FROM produtos WHERE id IN (1, 4, 6, 7);
+SELECT * FROM clientes WHERE id = 1;
+SELECT * FROM categorias WHERE id = 1;
+
+ETAPA 6
+
+SELECT * FROM produtos WHERE preco > 100.00;
+SELECT * FROM PRODUTOS WHERE preco < 50.00;
