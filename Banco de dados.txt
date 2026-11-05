@@ -73,7 +73,7 @@ INSERT INTO CATEGORIAS (nome, descricao) VALUES
 ('Audio', 'Fones de ouvido e caixas de som');
 
 INSERT INTO produtos (nome,descricao,preco,quantidade,categoria_id,ativo) VALUES
-('Smartphone X', '128GB de memória', 1500.00, 25, 1, 1),
+('Smartphone X', '128GB de memoria', 1500.00, 25, 1, 1),
 ('Smartphone Y', '64GB de memória', 800.00, 15, 1, 1),
 ('Capinha para Celular', 'Capinha transparente', 30.00, 50, 1, 1),
 ('Notebook Gamer', 'Intel i7 16GB SSD 512GB', 4500.00, 8, 2, 1),
@@ -164,4 +164,15 @@ SELECT * FROM categorias WHERE id = 1;
 ETAPA 6
 
 SELECT * FROM produtos WHERE preco > 100.00;
-SELECT * FROM PRODUTOS WHERE preco < 50.00;
+SELECT * FROM produtos WHERE preco < 50.00;
+SELECT * FROM produtos WHERE preco >= 200.00;
+SELECT * FROM produtos WHERE quantidade <= 10;
+SELECT * FROM clientes WHERE ativo = 1;
+SELECT * FROM produtos WHERE ativo = 0;
+SELECT * FROM produtos WHERE categoria_id <> 1;
+
+ETAPA 7
+
+SELECT * FROM produtos WHERE ativo = 1 AND preco > 100.00;
+SELECT * FROM produtos WHERE preco < 50.00 OR preco > 500.00;
+SELECT * FROM produtos WHERE NOT ativo = 1;
