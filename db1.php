@@ -24,17 +24,28 @@ $stml ->execute([
 
 ]);
 
-}if(isset($_POST["atualizar"])){
-    $id=$_POSt["id"];
-    $nome=$_POST["nome"];
-    $preco=$_POST["preco"];
-    $quantidade=$_POST["quantidade"];
+}if(isset($_POST["excluir"])){
+    $id=$_POST["id"];
+    $sql = "DELETE FROM produtos WHERE id = $id";
+    $stmt = $pdo->prepare($sql);
+    $stmt -> execute(["id"=>$id]);
 
-    $sql = "UPDATE produtos";
+    
 
 
 }
+$produtoEditar = null;
+if(isset($GET["editar"])){
+    $id=$_GET["editar"];
+    $sql = "DELETE FROM produtos WHERE id = $id";
+    $stmt = $pdo->prepare($sql);
+    $stmt -> execute(["id"=>$id]);
+    $produtoEditar = $stmt-> fetch(PDO::FETCH_ASSOC);
 
+}
+$sql = "SELECT * FROM produtos ORDER BY id ASC";
+$stmt = $PDO->query($sql);
+$produtos = $smat->fetch(PDO::FETCH_ASSOC);
 ?>
 
 <!DOCTYPE html>
