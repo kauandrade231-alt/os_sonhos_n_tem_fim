@@ -8,8 +8,8 @@
 
 // host = 'local host'
 $host = 'localhost';
-$db = 'joaoa755_db1';
-$user = 'joaoa755';
+$db = 'kauan755_db1';
+$user = 'kauan755';
 $pass = '755!@#';
 $charset = 'utf8mb4';
 
@@ -38,4 +38,3 @@ echo "CONECTADO COM SUCESSO";
 }
 
 ?>
-Exibindo conexao.php.
