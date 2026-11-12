@@ -228,6 +228,23 @@
                     <a href="atividades/helpdesk.php">ver projeto</a>
                 </div>
 
+                <div class="card">
+
+<div class="numero-projeto">
+    08
+</div>
+<h3>Banco de dados</h3>
+<p>
+    descrição do sistema do cadastro
+</p>
+
+<div class="tecnologias">
+    <span>HTML</span>
+    <span>CSS</span>
+    <!--span>PHP</span-->
+</div>
+<a href="atividades/db1.php">ver projeto</a>
+</div>
 
             </div>
 
