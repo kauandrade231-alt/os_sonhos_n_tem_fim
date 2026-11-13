@@ -7,7 +7,7 @@
         preco DECIMAL(10,2) NOT NULL,
         quantidade INT NOT NULL)";
 
-    $pdo->exec($sql);
+    $pdo1->exec($sql);
 
                         // 2. CADASTRAR PRODUTO
     if (isset($_POST["cadastrar"])) {
@@ -17,7 +17,7 @@
 
         $sql = "INSERT INTO produtos (nome, preco, quantidade) VALUES ('$nome', $preco, $quantidade)";
 
-        $stmt = $pdo->prepare($sql);
+        $stmt = $pdo1->prepare($sql);
 
         $stmt->execute();
     }
@@ -31,7 +31,7 @@
 
         $sql = "UPDATE produtos SET nome = '$nome', preco =$preco, quantidade = $quantidade WHERE id = $id";
 
-        $stmt = $pdo->prepare($sql);
+        $stmt = $pdo1->prepare($sql);
 
         $stmt->execute();
     }
@@ -42,7 +42,7 @@
 
         $sql = "DELETE FROM produtos WHERE id = $id";
 
-        $stmt = $pdo->prepare($sql);
+        $stmt = $pdo1->prepare($sql);
 
         $stmt->execute();
     }
@@ -55,7 +55,7 @@
 
         $sql = "SELECT * FROM produtos WHERE id = $id";
 
-        $stmt = $pdo->prepare($sql);
+        $stmt = $pdo1->prepare($sql);
 
         $stmt->execute();
 
@@ -65,7 +65,7 @@
                         // 6. LISTAR TODOS OS PRODUTOS
     $sql = "SELECT * FROM produtos ORDER BY id ASC";
 
-    $stmt = $pdo->query($sql);
+    $stmt = $pdo1->query($sql);
 
     $produtos = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
