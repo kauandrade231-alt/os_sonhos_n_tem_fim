@@ -146,8 +146,11 @@ if (isset($_POST["cadastrar_venda"])) {
     </tr>
             <?php foreach ($produtos as $produto) {?>
             
-            
-            
+                <td> <?= $produto["id"] ?> </td>
+                <td> <?= htmlspecialchars($produto["nome"]) ?> </td>
+                <td> <?=htmlspecialchars($produto["categoria_id"]) ?></td>
+                <td> R$ <?= number_format($produto["preco"], 2, ",", ".") ?></td>
+                <td> <?= $produto["quanti"] ?> </td>
             <?php } ?>
 
 </body>
