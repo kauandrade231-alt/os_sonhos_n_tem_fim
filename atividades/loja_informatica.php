@@ -132,5 +132,23 @@ if (isset($_POST["cadastrar_venda"])) {
         <?php } ?>
     </form>
 
+    <hr>
+    <h2>Produtos Cadastrados</h2>
+
+    <tr>
+     <th>ID</th>
+     <th>Nome</th>
+     <th> Categoria</th>
+    <th>Preço</th>
+    <th>Quantidade disponível</th> 
+    <th>Estoque mínimo</th>
+    <th>Situação do estoque</th>
+    </tr>
+            <?php foreach ($produtos as $produto) {?>
+            
+            
+            
+            <?php } ?>
+
 </body>
 </html>
