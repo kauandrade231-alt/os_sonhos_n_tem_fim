@@ -150,8 +150,16 @@ if (isset($_POST["cadastrar_venda"])) {
                 <td> <?= htmlspecialchars($produto["nome"]) ?> </td>
                 <td> <?=htmlspecialchars($produto["categoria_id"]) ?></td>
                 <td> R$ <?= number_format($produto["preco"], 2, ",", ".") ?></td>
-                <td> <?= $produto["quanti"] ?> </td>
+                <td> <?= $produto["quantidade"] ?> </td>
+                <td><?=$produto["estoque_minimo"]?></td>
             <?php } ?>
-
+                    <?php
+                    if ($produto["quantidade"] == 0) {
+                        echo "ESGOTADO";
+                    } elseif ($produto["quantidade"] <= $produto["estoque_minimo"]) {
+                        echo "ESTOQUE BAIXO";
+                    } else {
+                        echo "DISPONÍVEL";
+                    }?>
 </body>
 </html>
