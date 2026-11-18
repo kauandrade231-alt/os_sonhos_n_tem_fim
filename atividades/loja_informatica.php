@@ -53,7 +53,7 @@ if (isset($_POST["cadastrar_produto"])) {
     $categoria_id = $_POST["categoria_id"];
     $preco = $_POST["preco"];
     $quantidade = $_POST["quantidade"];
-    $estoque_minimo = $POST["estoque_minimo"];
+    $estoque_minimo = $_POST["estoque_minimo"];
 
     $sqlProdutos = "INSERT INTO produtos(nome,categoria_id,preco,quantidade,estoque_minimo) VALUES ('$nome',$categoria_id,$preco,$quantidade,$estoque_minimo)";
     $pdo2->exec($sqlProdutos);
