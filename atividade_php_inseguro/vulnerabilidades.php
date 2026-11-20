@@ -1,19 +1,25 @@
 <?php
 // Objetivo: localizar, explicar e corrigir vulnerabilidades.
-require_once "banco.sql";
-ini_set('display_errors', 1);
 
+//Display_errors, 0 =Não exibir erros internos para qualquer usuario.
+require_once "banco.sql";
+ini_set('display_errors', 0);
+
+//Log_errors, '1' - Registra os logs num arquivo interno o qual o usuario padrão não possui acesso
+ini_set('log_errors', '1');
+
+//Define quais tipos de erros o PHP de registrar,[E_ALL]-todos os erros.
 error_reporting(E_ALL);
 
 session_start();
 
 $host = '127.0.0.1';
 
-$banco = 'xxxxxxx';
+$banco = 'kauan755';
 
-$usuario = 'xxxxxxx';
+$usuario = 'kauan755dv2';
 
-$senha = 'xxxxxxx';
+$senha = '755!@#';
 
 try {
 
@@ -23,13 +29,15 @@ try {
 
 } catch (PDOException $e) {
 
-    die('Falha no banco: ' . $e->getMessage());
+    error_log($e->getMessage());
+    http_response_code(500);
+    exit('Erro interono de conexão. ');
 }
 
 $mensagem = $_GET['msg'] ?? '';
-
+if ($_SERVER["REQUEST_METHOD"] == "POST"){
 $acao = $_POST['acao'] ?? $_GET['acao'] ?? '';
-
+}
 if ($acao === 'login') {
 
     $email = $_POST['email'] ?? '';
@@ -52,7 +60,14 @@ if ($acao === 'login') {
         'UTF-8'
     );
 
-    $sql = "SELECT * FROM usuarios WHERE email = '$email' AND senha = '$password'";
+    $sql = "SELECT * FROM usuarios WHERE email = :email AND senha = :password";
+    
+    $stmt = $pdo->prepare($sql);
+
+    $stmt->execute([
+        'email' => $email,
+        'password' => $password
+    ]);
 
     $encontrado = $pdo->query($sql)->fetch(PDO::FETCH_ASSOC);
 
@@ -146,8 +161,12 @@ $stmt -> execute(['categoria' => $categoria]); //ADICIONEI
 
 $ordem = $_GET['ordem'] ?? 'id';
 
-$sqlLista = "SELECT * FROM produtos WHERE (nome LIKE '%$busca%' OR descricao LIKE '%$busca%')";
+$sqlLista = "SELECT * FROM produtos WHERE (nome LIKE:buscaNome OR descricao LIKE :buscaDescricao)";
 
+$parametros = [
+    'buscaNome' => "%$busca%",
+    'buscaDescricao' => "%$busca%"
+];
 if ($categoriaFiltro !== '') {
     
     $sqlLista .= " AND categoria = '$categoriaFiltro'" ;}
@@ -164,6 +183,8 @@ if (isset($_GET['editar'])) {
 }
 
 $total = $pdo->query('SELECT COUNT(*) FROM produtos')->fetchColumn();
+//ENT_QUOTES = É uma 'constante' que indica que tanto as aspas simples quanto as aspas duplasdevem ser convertidas em entidades html.
+//UTF-8 = Permite  trabalhar com caractres
 
 ?>
 
